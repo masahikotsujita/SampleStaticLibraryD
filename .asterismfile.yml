@@ -4,8 +4,7 @@ dependencies:
   - masahikotsujita/SampleStaticLibraryB
   - masahikotsujita/SampleStaticLibraryC
 artifacts:
-  - src: Include/*
-    dst: ${ARTIFACTS_ROOT}/include/
-  - src: Dist/*
-    dst: ${ARTIFACTS_ROOT}/lib/
-
+  include_headers:
+    - Include/*
+  link_libraries:
+    - Dist/SampleStaticLibraryD_${PLATFORM}_${CONFIGURATION}.lib
