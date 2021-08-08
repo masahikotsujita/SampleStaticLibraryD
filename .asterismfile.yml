@@ -1,8 +1,10 @@
 name: SampleStaticLibraryD
 sln_path: Project/windows/SampleStaticLibraryD.sln
 dependencies:
-  - masahikotsujita/SampleStaticLibraryB
-  - masahikotsujita/SampleStaticLibraryC
+  - project: masahikotsujita/SampleStaticLibraryB
+    version: ^1.0.0
+  - project: masahikotsujita/SampleStaticLibraryC
+    version: ^1.0.0
 artifacts:
   include_headers:
     - Include/*
